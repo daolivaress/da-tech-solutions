@@ -1,0 +1,32 @@
+---
+import ServiceMoreInfoItemWithBg from "../ServiceMoreInfoItemWithBg.astro";
+---
+
+<ServiceMoreInfoItemWithBg
+  imagePC="https://imagenes.eltiempo.com/files/image_1200_600/uploads/2021/07/15/60f0664b1b36e.jpeg"
+  imagePCAlt="Mantenimiento de hardware"
+  imageMobile="https://www.computronixco.com/wp-content/uploads/2024/06/Mantenimiento-fisico-para-ordenadores-de-escritorio.jpg"
+  imageMobileAlt="Mantenimiento de hardware"
+  id="physic-maintenance"
+>
+  <span slot="title"><h1
+      class="font-extrabold mb-4 text-[32px] leading-7 font-[Poppins] sm:text-3xl md:text-[50px] md:leading-11 max-md:text-center"
+    >
+      Mantenimiento de <span class="text-sky-600">hardware</span>
+    </h1>
+  </span>
+  <span slot="description">
+    <p class="mb-4 lg:text-2xl">
+      En el precio de un mantenimiento para pc incluimos un desensamble del
+      hardware del equipo para limpiar cada una de sus partes, <b
+        >así tendrá un funcionamiento más óptimo.</b
+      >
+    </p>
+    <ul class="list-disc flex flex-col gap-4 pl-5 mb-4 lg:text-lg">
+      <li>Desensamble y limpieza de componentes internos</li>
+      <li>Revisión y limpieza de ventiladores y disipadores</li>
+      <li>Limpieza del teclado, ratón y monitor</li>
+      <li>Cambio de pasta termina</li>
+    </ul>
+  </span>
+</ServiceMoreInfoItemWithBg>

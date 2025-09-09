@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets";
+import image from "../assets/pexels-photo-777001.jpeg";
+---
+
+<section class="h-150 relative text-center">
+  <Image
+    src={image}
+    alt="Fondo de pantalla de PC gamer azul"
+    class="object-cover w-full h-full brightness-30 -z-10 absolute"
+  />
+  <div
+    class="flex flex-col gap-6 items-center justify-center h-full max-md:px-10"
+  >
+    <p class="text-white font-[Poppins] font-extrabold text-[40px] text-shadow-lg max-sm:leading-10 sm:text-5xl">
+      Asesoria para <span class="text-sky-500">comprar tu computador</span>
+    </p>
+    <p class="text-neutral-200 max-w-xl text-shadow-lg font-medium sm:text-lg">
+      Si vas a comprar un computador pc de escritorio o portátil pero aún no
+      sabes cual comprar, a nosotros nos encantaría explicarte lo que debes
+      tener en cuenta para tomar una decisión.
+    </p>
+    <p class="text-neutral-200 text-shadow-lg font-light max-sm:text-sm">
+      La opinión de un experto te puede ayudar a evitar malas inversiones.
+    </p>
+    <button class="bg-sky-600 cursor-pointer text-white py-2 px-4 rounded-lg shadow-xl transition-all hover:bg-sky-700 hover:px-10">
+      Contáctanos
+    </button>
+  </div>
+</section>

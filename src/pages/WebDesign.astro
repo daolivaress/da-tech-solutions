@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Header from "../components/Header.astro"
+import WhatsappBtn from "../components/WhatsappBtn.astro"
+import Footer from "../components/Footer.astro"
+import WebDesignPresentation from "../components/web-design-components/WebDesignPresentation.astro"
+import LandingPage from "../components/web-design-components/LandingPage.astro"
+import PersonalizedPage from "../components/web-design-components/PersonalizedPage.astro"
+import VirtualShop from "../components/web-design-components/VirtualShop.astro"
+
+---
+
+<Layout>
+	<Header />
+	<main class="w-full">
+		<WebDesignPresentation />
+		<LandingPage />
+		<PersonalizedPage />
+		<VirtualShop />
+	</main>
+	<WhatsappBtn />
+	<Footer />
+</Layout>

@@ -1,0 +1,70 @@
+---
+import Image from "astro/components/Image.astro";
+import image1 from "../../assets/pcmaintenance.png";
+import image2 from "../../assets/pcmaintenance2.png";
+import SectionServiceItem from "../SectionServiceItem.astro";
+---
+
+<section class="mx-auto py-10 px-2 lg:w-[1000px]">
+  <div
+    class="bg-gradient-to-b relative from-cyan-500 to-blue-500 text-white rounded-xl shadow-lg h-85 sm:h-88 lg:h-130"
+  >
+    <Image
+      src={image1}
+      alt="PC Gamer"
+      class="absolute max-[850px]:hidden -bottom-10 w-120 -right-10 lg:w-150 xl:-right-35 xl:w-180"
+    />
+    <Image
+      src={image2}
+      alt="PC Gamer"
+      class="absolute max-[850px]:block hidden -bottom-12 w-58 right-4 sm:w-70"
+    />
+    <div class="p-8">
+      <h1
+        class="text-[32px] font-[Poppins] max-w-xs sm:max-w-md lg:max-w-xl font-extrabold max-sm:leading-9 max-lg:leading-12 sm:text-5xl lg:text-6xl"
+      >
+        Mantenimiento y reparación de computadores
+      </h1>
+      <p
+        class="font-thin mt-2 leading-5 text-pretty text-sm lg:text-xl lg:leading-6 max-w-xs md:max-w-sm lg:max-w-md"
+      >
+        Si deseas un servicio técnico de pc en tu domicilio, estos son los
+        costos de los diferentes mantenimientos de PCs que hacemos.
+      </p>
+    </div>
+  </div>
+  <div class="mt-20 -mb-10 flex gap-4 max-md:flex-col md:justify-around max-md:items-center">
+    <SectionServiceItem
+        image={"https://www.fracttal.com/hubfs/Fracttal%20Website%202021/mega-post/que-es-un-software-de-mantenimiento/miniatura-que-es-un-software-de-mantenimiento.webp"}
+        title="Mantenimiento de software"
+        href="#system-maintenance"
+        width="w-40"
+      >
+        
+          Mejoramos el rendimiento del sistema operativo o software de tu
+          computadora para que sea más rápida.
+ 
+      </SectionServiceItem>
+      <SectionServiceItem
+        image={"https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2024/04/7-tareas-mantenimiento-poner-punto-pc-3301976.jpg?tf=3840x"}
+        title="Mantenimiento de hardware"
+        href="#physic-maintenance"
+        width="w-40"
+      >
+
+          Limpieza y mantenimiento preventivo a tu computadora para
+          evitar fallos y mejorar su rendimiento.
+
+      </SectionServiceItem>
+      <SectionServiceItem
+        image={"https://blog.comparasoftware.com/wp-content/uploads/2020/09/Mant._Hardware.png"}
+        title="Mantenimiento total"
+        href="#total-maintenance"
+        width="w-40"
+      >
+
+          Es el servicio mas completo que ofrecemos. Incluye mantenimiento de hardware y software.
+
+      </SectionServiceItem>
+  </div>
+</section>

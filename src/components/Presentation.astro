@@ -1,0 +1,149 @@
+---
+import ServiceItem from "./ServiceItem.astro";
+import Image from "astro/components/Image.astro";
+import image from "../assets/pc.png";
+---
+
+<section class="mx-auto py-10 lg:w-[1000px] max-lg:px-4">
+  <div
+    class="bg-gradient-to-b relative from-cyan-500 to-blue-500 text-white rounded-xl shadow-lg h-85 sm:h-88 lg:h-130"
+  >
+    <Image
+      src={image}
+      alt="PC Gamer"
+      class="max-[490px]:hidden absolute right-2 w-67 -top-2 sm:-top-4 sm:right-6 max-sm:w-55 lg:w-100"
+    />
+    <div class="pt-10 pl-10 max-w-xs sm:max-w-md md:max-w-lg">
+      <h1
+        class="text-[40px] font-[Poppins] font-extrabold max-sm:leading-10 max-lg:leading-12 sm:text-5xl lg:text-7xl"
+      >
+        Soluciones tecnológicas a tu medida
+      </h1>
+      <p class="font-thin mt-2 leading-5 text-pretty md:text-xl md:leading-6">
+        Ofrecemos excelentes soluciones tecnológicas a precios competitivos.
+      </p>
+    </div>
+    <a href="#about-us">
+      <button
+        class="bg-white absolute bottom-8 left-10 cursor-pointer text-black rounded-full px-4 py-2 text-sm font-medium shadow-sm max-md:text-xs"
+        >Lee mas sobre nosotros</button
+      >
+    </a>
+  </div>
+  <h2
+    class="text-[35px] text-blue-500 text-center font-[Poppins] font-extrabold max-md:leading-10 md:text-4xl lg:text-6xl my-8 sm:mt-25 lg:mt-30"
+  >
+    Nuestros Servicios
+  </h2>
+  <div
+    class="flex flex-col gap-10 items-center justify-around mb-10 md:flex-row"
+  >
+    <ServiceItem href="/WebDesign">
+      <span slot="icon">
+        <p
+          class="bg-blue-500 shadow-md size-12 rounded-full text-center flex items-center justify-center flex-shrink-0 text-white font-bold text-3xl"
+        >
+          1
+        </p>
+      </span>
+      <span slot="title">
+        <p class="leading-5 text-lg">
+          <span class="text-blue-500 font-bold">Diseño</span> de paginas web
+        </p>
+      </span>
+      <span slot="description">
+        <ul class="list-disc text-sm text-neutral-600 ml-7 font-medium">
+          <li>Creación de diseños atractivos y funcionales</li>
+          <li>Optimización de la experiencia del usuario</li>
+          <li>Implementación de tecnologías web modernas</li>
+        </ul>
+      </span>
+    </ServiceItem>
+
+    <ServiceItem href="/HardwareAndSoftwareIns">
+      <span slot="icon">
+        <p
+          class="bg-blue-500 shadow-md size-12 rounded-full text-center flex items-center justify-center flex-shrink-0 text-white font-bold text-3xl"
+        >
+          2
+        </p>
+      </span>
+      <span slot="title">
+        <p class="leading-5 text-lg">
+          <span class="text-blue-500 font-bold">Instalacion</span> de hardware y
+          software
+        </p>
+      </span>
+      <span slot="description">
+        <ul class="list-disc text-sm text-neutral-600 ml-7 font-medium">
+          <li>Configuración de sistemas operativos</li>
+          <li>Instalación de aplicaciones y programas</li>
+          <li>Asesoría en la selección de hardware y software</li>
+        </ul>
+      </span>
+      <span slot="button">
+        <button
+          class="text-sm mt-1 bg-neutral-200 cursor-pointer font-medium transition-all hover:scale-105 hover:shadow-lg hover:bg-blue-500 hover:text-white rounded-full px-4 py-2"
+          >Mas Informacion</button
+        >
+      </span>
+    </ServiceItem>
+
+    <ServiceItem href="/Maintenance">
+      <span slot="icon">
+        <p
+          class="bg-blue-500 shadow-md size-12 rounded-full text-center flex items-center justify-center flex-shrink-0 text-white font-bold text-3xl"
+        >
+          3
+        </p>
+      </span>
+      <span slot="title">
+        <p class="leading-5 text-lg">
+          <span class="text-blue-500 font-bold">Mantenimiento</span> y reparación
+          de PCs
+        </p>
+      </span>
+      <span slot="description">
+        <ul class="list-disc text-sm text-neutral-600 ml-7 font-medium">
+          <li>Diagnóstico y solución de problemas</li>
+          <li>Actualización de software y hardware</li>
+          <li>Optimización del rendimiento del equipo</li>
+        </ul>
+      </span>
+      <span slot="button">
+        <button
+          class="text-sm mt-1 bg-neutral-200 cursor-pointer font-medium transition-all hover:scale-105 hover:shadow-lg hover:bg-blue-500 hover:text-white rounded-full px-4 py-2"
+          >Mas Informacion</button
+        >
+      </span>
+    </ServiceItem>
+
+    <ServiceItem href="/UniversityProjects">
+      <span slot="icon">
+        <p
+          class="bg-blue-500 shadow-md size-12 rounded-full text-center flex items-center justify-center flex-shrink-0 text-white font-bold text-3xl"
+        >
+          4
+        </p>
+      </span>
+      <span slot="title">
+        <p class="leading-5 text-lg">
+          <span class="text-blue-500 font-bold">Proyectos</span> universitarios
+        </p>
+      </span>
+      <span slot="description">
+        <ul class="list-disc text-sm text-neutral-600 ml-7 font-medium">
+          <li>Desarrollo de proyectos académicos</li>
+          <li>Asesoría y consultoría técnica</li>
+          <li>Implementación de soluciones tecnológicas</li>
+        </ul>
+      </span>
+      <span slot="button">
+        <button
+          class="text-sm mt-1 bg-neutral-200 cursor-pointer font-medium transition-all hover:scale-105 hover:shadow-lg hover:bg-blue-500 hover:text-white rounded-full px-4 py-2"
+          >Mas Informacion</button
+        >
+      </span>
+    </ServiceItem>
+  </div>
+</section>

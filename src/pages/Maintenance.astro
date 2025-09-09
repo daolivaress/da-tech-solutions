@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Header from "../components/Header.astro"
+import WhatsappBtn from "../components/WhatsappBtn.astro"
+import Footer from "../components/Footer.astro"
+import MaintenancePresentation from "../components/maintenance-components/MaintenancePresentation.astro"
+import SystemMaintenance from "../components/maintenance-components/SystemMaintenance.astro"
+import PhysicMaintenance from "../components/maintenance-components/PhysicMaintenance.astro"
+import TotalMaintenance from "../components/maintenance-components/TotalMaintenance.astro"
+
+---
+
+<Layout>
+	<Header />
+	<main class="w-full">
+		<MaintenancePresentation />
+		<SystemMaintenance />
+		<PhysicMaintenance />
+		<TotalMaintenance />
+	</main>
+	<WhatsappBtn />
+	<Footer />
+</Layout>

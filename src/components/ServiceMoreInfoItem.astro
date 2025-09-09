@@ -1,0 +1,23 @@
+---
+import DiagnosticBtn from "./DiagnosticBtn.astro";
+---
+<section
+  class="flex p-6 py-20 justify-center gap-10 max-md:flex-col max-lg:items-center"
+  id={Astro.props.id}
+>
+  <img
+    src={Astro.props.imagePC}
+    alt={Astro.props.imagePCAlt}
+    class="w-[300px] h-[650px] object-cover flex-shrink-0 shadow-md rounded-xl hidden md:block lg:w-[380px]"
+  />
+  <img
+    src={Astro.props.imageMobile}
+    alt={Astro.props.imageMobileAlt}
+    class="flex-shrink-0 h-[250px] object-cover w-lg shadow-md rounded-xl hidden max-md:block"
+  />
+  <div class="lg:max-w-[1000px]">
+    <slot name="title"/>
+    <slot name="description" />
+    <DiagnosticBtn href={Astro.props.diagnosticLink} />
+  </div>
+</section>

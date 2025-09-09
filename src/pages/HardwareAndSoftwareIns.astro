@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Header from "../components/Header.astro"
+import WhatsappBtn from "../components/WhatsappBtn.astro"
+import Footer from "../components/Footer.astro"
+import HardwareSoftwarePresentation from "../components/hardware-and-software-components/HardwareSoftwarePresentation.astro"
+import SoftwareInstall from "../components/hardware-and-software-components/SoftwareInstall.astro"
+import HardwareInstall from "../components/hardware-and-software-components/HardwareInstall.astro"
+---
+
+<Layout>
+	<Header />
+	<main class="w-full">
+		<HardwareSoftwarePresentation />
+		<SoftwareInstall />
+		<HardwareInstall />
+	</main>
+	<WhatsappBtn />
+	<Footer />
+</Layout>

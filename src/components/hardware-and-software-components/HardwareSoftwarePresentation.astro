@@ -1,0 +1,58 @@
+---
+import Image from "astro/components/Image.astro";
+import SectionServiceItem from "../SectionServiceItem.astro";
+import imagePresentation1 from "../../assets/instalacion-de-software.png";
+import imagePresentation2 from "../../assets/instalacion-de-hardware.png";
+import software from "../../assets/software.png";
+import hardware from "../../assets/hardware.png";
+---
+
+<section class="mx-auto py-10 px-2 lg:w-[1000px]">
+  <div
+    class="bg-gradient-to-b relative from-cyan-500 to-blue-500 text-white rounded-xl shadow-lg h-85 sm:h-88 lg:h-130"
+  >
+    <Image
+      src={imagePresentation1}
+      alt="Instalación de software y hardware"
+      class="absolute max-[880px]:hidden -bottom-8 w-100 right-0 lg:w-110 lg:-right-2 lg:bottom-8 xl:-right-15"
+    />
+    <Image
+      src={imagePresentation2}
+      alt="Instalación de software y hardware"
+      class="absolute max-[880px]:block hidden -bottom-7 w-48 right-0 sm:w-76 md:right-4"
+    />
+    <div class="p-8">
+      <h1
+        class="text-[32px] font-[Poppins] max-w-[250px] sm:max-w-sm lg:max-w-lg font-extrabold max-sm:leading-9 max-lg:leading-12 sm:text-5xl lg:text-6xl"
+      >
+        Instalacion de Hardware y Software
+      </h1>
+      <p
+        class="font-thin mt-2 leading-5 text-pretty text-sm lg:text-xl lg:leading-6 max-w-xs md:max-w-sm lg:max-w-md"
+      >
+        Ofrecemos servicios de instalación de hardware y software para
+        garantizar que tu equipo esté siempre actualizado y funcionando
+        correctamente.
+      </p>
+    </div>
+  </div>
+  <div
+    class="mt-16 flex gap-10 max-md:flex-col md:justify-center max-md:items-center"
+  >
+    <SectionServiceItem
+      image={software.src}
+      title="Instalacion de Software"
+      href="#software-install"
+    >
+
+        Ofrecemos servicios de instalación de software para garantizar que tu sistema esté siempre actualizado y
+        funcionando correctamente.
+    </SectionServiceItem>
+    <SectionServiceItem image={hardware.src} width="w-[110px]" title="Instalacion de Hardware" href="#hardware-install">
+
+        Ofrecemos servicios de instalación de hardware para garantizar que tu
+        equipo esté siempre actualizado y funcionando correctamente.
+
+    </SectionServiceItem>
+  </div>
+</section>

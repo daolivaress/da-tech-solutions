@@ -1,0 +1,13 @@
+<div class="max-w-[240px] flex flex-col items-center justify-center gap-3">
+  <div class="flex items-center gap-2">
+    <slot name="icon" />
+    <slot name="title" />
+  </div>
+  <slot name="description" />
+  <a href={Astro.props.href}>
+    <button
+      class="text-sm mt-1 bg-neutral-200 cursor-pointer font-medium transition-all hover:scale-105 hover:shadow-lg hover:bg-blue-500 hover:text-white rounded-full px-4 py-2"
+      >Mas Informacion</button
+    >
+  </a>
+</div>

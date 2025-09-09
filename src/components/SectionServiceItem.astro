@@ -1,0 +1,14 @@
+<div class="flex flex-col group items-center justify-center w-[250px] h-[370px] border border-neutral-200 rounded-xl py-10 px-6">
+  <img
+    class=`${Astro.props.width ? Astro.props.width : "w-[70px]"} rounded-lg object-contain mb-3`
+    src={Astro.props.image}
+    alt="Servicio"
+  />
+  <div>
+    <h2 class="font-bold text-2xl leading-6 text-center">{Astro.props.title}</h2>
+    <p class="mt-2 text-center text-sm"><slot /></p>
+  </div>
+  <a href={Astro.props.href}>
+    <button class="mt-4 bg-blue-500 cursor-pointer text-sm text-white py-2 px-4 rounded-lg">Mas Informacion</button>
+  </a>
+</div>

@@ -1,0 +1,31 @@
+---
+import landingImage from "../../assets/landingPage.png";
+import ServiceMoreInfoItem from "../ServiceMoreInfoItem.astro";
+---
+
+<ServiceMoreInfoItem
+  imagePC={landingImage.src}
+  imagePCAlt="Landing page"
+  imageMobile={"https://landingi.com/wp-content/uploads/2023/12/size-LP-1-optimized.webp"}
+  imageMobileAlt="Landing page"
+  id="landing-page"
+>
+  <span slot="title">
+    <h1 class="font-semibold max-md:text-center">DISEÑO PÁGINAS WEB</h1>
+    <h1
+      class="font-extrabold mb-4 text-[32px] leading-7 font-[Poppins] sm:text-3xl md:text-[50px] md:leading-11 max-md:text-center"
+    >
+      Landing <span class="text-sky-600">Page</span>
+    </h1>
+  </span>
+  <span slot="description">
+    <p class="mb-4 lg:text-2xl">
+      Una landing page es una página web diseñada con el objetivo de
+      <b>convertir visitantes en leads o clientes potenciales</b>. Estas páginas
+      suelen ser utilizadas en campañas de marketing digital para captar la
+      atención de los usuarios y persuadirlos a realizar una acción específica,
+      como completar un formulario, suscribirse a un boletín informativo o
+      realizar una compra.
+    </p>
+  </span>
+</ServiceMoreInfoItem>

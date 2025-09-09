@@ -1,0 +1,65 @@
+---
+import Image from "astro/components/Image.astro";
+import image1 from "../../assets/webdesign.png";
+import image2 from "../../assets/diseno-de-paginas-web.png";
+import SectionServiceItem from "../SectionServiceItem.astro";
+import landingImage from "../../assets/diseno-de-paginas-web-landing-page.png";
+import webImage from "../../assets/Diseño-de-paginas-web-personalizadas.png";
+import virtualShopImage from "../../assets/diseño-de-catalogos-virtuales.png";
+---
+
+<section class="mx-auto py-10 px-2 lg:w-[1000px]">
+  <div
+    class="bg-gradient-to-b relative from-cyan-500 to-blue-500 text-white rounded-xl shadow-lg h-85 sm:h-88 lg:h-130"
+  >
+    <Image
+      src={image1}
+      alt="Diseño de páginas web"
+      class="absolute max-[880px]:hidden -bottom-8 w-110 right-0 lg:w-126 lg:-right-2 xl:w-150 xl:-right-35"
+    />
+    <Image
+      src={image2}
+      alt="Diseño de páginas web"
+      class="absolute max-[880px]:block hidden -bottom-7 w-48 right-0 sm:w-76 md:right-4"
+    />
+    <div class="p-8">
+      <h1
+        class="text-[32px] font-[Poppins] max-w-[250px] sm:max-w-sm lg:max-w-lg font-extrabold max-sm:leading-9 max-lg:leading-12 sm:text-5xl lg:text-6xl"
+      >
+        Diseño de páginas web
+      </h1>
+      <p
+        class="font-thin mt-2 leading-5 text-pretty text-sm lg:text-xl lg:leading-6 max-w-xs md:max-w-sm lg:max-w-md"
+      >
+        ¿No tienes página web? Si no apareces en internet en la actualidad, no
+        existes. Puedes crecer rápidamente con nuestro <b
+          >diseño de páginas web.</b
+        >
+      </p>
+    </div>
+  </div>
+  <div class="mt-16 flex gap-4 max-md:flex-col md:justify-around max-md:items-center">
+    <SectionServiceItem image={landingImage.src} title="Diseño de Landing page" href="#landing-page">
+
+        Una landing page es una página web diseñada para atraer usuarios y
+        convertir visitas en clientes potenciales.
+
+    </SectionServiceItem>
+    <SectionServiceItem image={webImage.src} title="Diseño de páginas web" href="#personalized-page">
+
+        Ofrecemos soluciones para todo tipo de personas o empresas que desean
+        tener una presencia en internet con un diseño de página web.
+
+    </SectionServiceItem>
+    <SectionServiceItem
+      image={virtualShopImage.src}
+      title="Diseño de tienda virtual"
+      href="#virtual-shop"
+    >
+
+        Diseñamos páginas web transaccionales para que puedas vender y ofrecer
+        productos con un catálogo virtual o tienda online.
+
+    </SectionServiceItem>
+  </div>
+</section>
